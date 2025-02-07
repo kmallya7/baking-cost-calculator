@@ -1,0 +1,115 @@
+/* css/styles.css */
+body {
+    background: url('https://github.com/kmallya7/price-checker/blob/main/Calculator%20BG.png?raw=true') no-repeat center center fixed; /* Or use a local image path */
+    background-size: cover;
+    color: #333; /* Text color on top of the image */
+}
+
+h1, h2, h3 {
+    text-align: center;
+    color: #444;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) { /* Adjust breakpoint as needed */
+    .container {
+        flex-direction: column; /* Stack sections vertically on smaller screens */
+    }
+}
+
+
+.section {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent white background */
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.table {
+    font-size: 13px;
+    width: 100%;
+}
+
+.table td,
+.table th {
+    vertical-align: middle;
+    padding: 6px;
+    text-align: center;
+}
+
+.table th {
+    background-color: #f2f2f2;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #666;
+}
+
+.input-group,
+.form-control {
+    margin-bottom: 15px;
+}
+
+.btn {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+}
+
+.ingredients-container {
+    padding: 20px;
+}
+
+.collapsible {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 15px;
+    margin: 10px auto;
+    display: block;
+    width: auto;
+}
+
+.active,
+.collapsible:hover {
+    background-color: #ccc;
+}
+
+.content {
+    padding: 0;
+    display: block;
+    width: auto;
+    margin: 10px auto;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+.compact-table {
+    width: auto;
+    margin: 0 auto;
+    background-color: #f1f1f1;
+}
+
+/* Style for the Final Cost Breakdown section */
+.row { /* Add some margin between rows */
+    margin-bottom: 10px; /* Adjust as needed */
+}
+
+.col-md-4 { /* Style the columns to give them some padding */
+    padding: 5px; /* Adjust as needed */
+}
