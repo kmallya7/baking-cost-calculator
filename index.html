@@ -27,26 +27,29 @@
                             <option value="liters">liters</option>
                         </select>
                     </div>
+                    <div class="d-flex justify-content-center mt-3">
                     <button type="submit" class="btn btn-success mt-3">Calculate Cost</button>
+                </div>
                 </form>
             </div>
 
-            <div class="col-md-4 section">
-                <h2>Calculation Summary</h2>
-                <table id="calculationSummaryTable" class="table table-bordered table-sm">
-                    <thead>
-                        <tr>
-                            <th>Ingredient Name</th>
-                            <th>Weight Used</th>
-                            <th>Cost (₹)</th>
-                            <th>Actions</th>
-                        </tr>
-                    </thead>
-                    <tbody id="calculationSummaryBody"></tbody>
-                </table>
-                <h2>Total Cost: ₹<span id="totalCost">0</span></h2>
-            </div>
-
+<div class="col-md-4 section">
+    <h2>Calculation Summary</h2>
+    <table id="calculationSummaryTable" class="table table-bordered table-sm">
+        <thead>
+            <tr>
+                <th>Ingredient Name</th>
+                <th>Weight Used</th>
+                <th>Cost (₹)</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="calculationSummaryBody"></tbody>
+    </table>
+    <div class="total-cost-container">
+        <h2>Total Cost: ₹<span id="totalCost">0</span></h2>
+    </div>
+</div>
             <div class="col-md-4 section" id="finalCostBreakdown">
                 <h2>Final Cost Breakdown</h2>
                 <div class="row">
@@ -65,7 +68,7 @@
                 </div>
                 <div class="row mt-2">
                     <div class="col-md-4">
-                        <label for="maintenanceCost">Maintenance Cost (₹):</label>
+                        <label for="maintenanceCost" class="small-label">Maintenance Cost (₹):</label>
                         <input type="number" id="maintenanceCost" class="form-control" value="0">
                     </div>
                     <div class="col-md-4">
@@ -81,14 +84,16 @@
                         </select>
                     </div>
                 </div>
-                <button type="button" class="btn btn-primary mt-3" id="calculateFinalCost">Calculate Final Cost</button><br><br>
+                <div class="d-flex justify-content-center mt-3">
+                <button type="button" class="btn btn-primary mt-3" id="calculateFinalCost">Calculate Final Cost</button></div><br><br>
                 <label>Total Cost (including profit): ₹<span id="finalTotalCost" style="font-weight: bold;">0</span></label>
             </div>
         </div>
 
-        <div class="ingredients-container mt-5">
-            <button class="collapsible">Show Ingredients</button>
-            <div class="content" hidden>
+        <!-- Show Ingredients Button and Table Outside Sections -->
+        <div class="text-center mt-4 ingredients-container">
+            <button class="collapsible btn btn-info">Show Ingredients</button>
+            <div class="content mt-3" hidden style="max-width: 600px; margin: 0 auto;">
                 <table id="ingredientsTable" class="table table-bordered table-sm compact-table">
                     <thead>
                         <tr>
