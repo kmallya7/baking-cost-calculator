@@ -1,115 +1,78 @@
-/* css/styles.css */
 body {
-    background: url('https://github.com/kmallya7/price-checker/blob/main/Calculator%20BG.png?raw=true') no-repeat center center fixed; /* Or use a local image path */
-    background-size: cover;
-    color: #333; /* Text color on top of the image */
-}
-
-h1, h2, h3 {
-    text-align: center;
-    color: #444;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
 .container {
+    max-width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.row {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     margin-bottom: 20px;
 }
 
-@media (max-width: 768px) { /* Adjust breakpoint as needed */
-    .container {
-        flex-direction: column; /* Stack sections vertically on smaller screens */
-    }
-}
-
-
 .section {
     flex: 1;
-    margin: 10px;
+    margin: 0 10px;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent white background */
-    border: none;
+    background-color: #ffffff;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.section h2 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: left;
 }
 
 .table {
-    font-size: 13px;
     width: 100%;
+    margin-bottom: 1rem;
+    color: #212529;
 }
 
-.table td,
-.table th {
-    vertical-align: middle;
-    padding: 6px;
-    text-align: center;
+.table thead th {
+    border-bottom: 2px solid #dee2e6;
+    background-color: #f8f9fa;
+    font-weight: bold;
 }
 
-.table th {
-    background-color: #f2f2f2;
+.table tbody td {
+    border-top: 1px solid #dee2e6;
 }
 
-label {
+.input-group .form-control {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.input-group .form-control:last-child {
+    margin-right: 0;
+}
+
+.row .col-md-4 label {
     display: block;
-    margin: 10px 0 5px;
-    color: #666;
+    margin-bottom: 5px;
 }
 
-.input-group,
-.form-control {
-    margin-bottom: 15px;
-}
-
-.btn {
+.row .col-md-4 input,
+.row .col-md-4 select {
     width: 100%;
-    padding: 8px;
-    font-size: 14px;
-}
-
-.ingredients-container {
-    padding: 20px;
-}
-
-.collapsible {
-    background-color: #eee;
-    color: #444;
-    cursor: pointer;
-    padding: 18px;
-    border: none;
-    text-align: center;
-    outline: none;
-    font-size: 15px;
-    margin: 10px auto;
-    display: block;
-    width: auto;
-}
-
-.active,
-.collapsible:hover {
-    background-color: #ccc;
-}
-
-.content {
-    padding: 0;
-    display: block;
-    width: auto;
-    margin: 10px auto;
-    overflow: hidden;
-    background-color: transparent;
-}
-
-.compact-table {
-    width: auto;
-    margin: 0 auto;
-    background-color: #f1f1f1;
-}
-
-/* Style for the Final Cost Breakdown section */
-.row { /* Add some margin between rows */
-    margin-bottom: 10px; /* Adjust as needed */
-}
-
-.col-md-4 { /* Style the columns to give them some padding */
-    padding: 5px; /* Adjust as needed */
+    box-sizing: border-box;
 }
