@@ -1,6 +1,10 @@
 // js/data/ingredients.js
 export const ingredients = [
     { name: 'Cream cheese', totalWeight: '1 KG', totalCost: 750 },
+    { name: 'Maida', totalWeight: '1 KG', totalCost: 85 },
+    { name: 'Sugar', totalWeight: '5 KG', totalCost: 250 },
+    { name: 'Vinegar', totalWeight: '1 L', totalCost: 80 },
+    { name: 'Banana essence', totalWeight: '100 ML', totalCost: 100 },
     { name: 'Whipping cream topolite', totalWeight: '1 KG', totalCost: 170 },
     { name: 'Amul butter', totalWeight: '1 KG', totalCost: 580 },
     { name: 'IFF Vanilla', totalWeight: '500 ML', totalCost: 230 },
