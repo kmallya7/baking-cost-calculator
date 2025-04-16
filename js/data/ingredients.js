@@ -1,6 +1,7 @@
 // js/data/ingredients.js
 export const ingredients = [
     { name: 'Cream cheese', totalWeight: '1 KG', totalCost: 750 },
+    { name: 'Cocoa Powder', totalWeight: '1 KG', totalCost: 1100 },
     { name: 'Maida', totalWeight: '1 KG', totalCost: 85 },
     { name: 'Sugar', totalWeight: '5 KG', totalCost: 250 },
     { name: 'Banana essence', totalWeight: '100 ML', totalCost: 100 },
@@ -15,12 +16,12 @@ export const ingredients = [
     { name: 'Fresh cream', totalWeight: '500 GM', totalCost: 275 },
     { name: 'Milk maid', totalWeight: '380 GM', totalCost: 134 },
     { name: 'Hazelnut paste', totalWeight: '1 KG', totalCost: 500 },
-    { name: 'Morde dark chocolate', totalWeight: '500 GM', totalCost: 195 },
+    { name: 'Morde dark chocolate', totalWeight: '500 GM', totalCost: 320 },
     { name: 'Morde white compound', totalWeight: '500 GM', totalCost: 185 },
     { name: 'Pectin', totalWeight: '250 GM', totalCost: 440 },
     { name: 'Bread improver', totalWeight: '500 GM', totalCost: 105 },
     { name: 'Gluten', totalWeight: '1 KG', totalCost: 240 },
-    { name: 'Morde dark compound', totalWeight: '500 GM', totalCost: 320 },
+    { name: 'Morde dark compound', totalWeight: '500 GM', totalCost: 195 },
     { name: 'Milk powder', totalWeight: '250 GM', totalCost: 100 },
     { name: 'Raagi powder', totalWeight: '500 GM', totalCost: 50 },
     { name: 'Whipping cream rich', totalWeight: '500 GM', totalCost: 148 },
